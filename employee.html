@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Employee Salary Breakup App</title>
+<script>
+ var eid = prompt("Enter Employee Id:");
+ var ename = prompt("Enter Employee Name:")
+ var basic = parseInt(prompt("Enter Basic Salary:"))
+ 
+ var hra = (2 * basic) / 100
+ var pf = (3 * basic) / 100
+ var ta = (1 * basic) / 100
+ var esi = (2.5 * basic) / 100
+ var grossPay = basic + hra + pf + esi + ta
+ var netPay = grossPay - pf
+
+ document.write("<br>")
+ document.write("<br>")
+ document.write(" Salary Break Up Application")
+ document.write("<br>")
+ document.write("==============================")
+ document.write("<br>")
+ document.write("Employee Id &nbsp&nbsp: "+ eid)
+ document.write("<br>")
+ document.write("Employee Name&nbsp&nbsp: "+ ename)
+ document.write("<br>")
+ document.write("Basic Salary &nbsp&nbsp: "+basic)
+ document.write("<br>")
+ document.write("HRA &nbsp&nbsp: "+hra)
+ document.write("<br>")
+ document.write("PF &nbsp&nbsp&nbsp&nbsp: "+pf)
+ document.write("<br>")
+ document.write("TA &nbsp&nbsp&nbsp: "+ta)
+ document.write("<br>")
+ document.write("Gross Pay &nbsp&nbsp&nbsp: "+grossPay)
+ document.write("<br>")
+ document.write("Net Pay &nbsp&nbsp&nbsp: "+netPay)
+</script>
+</head>
+<body>
+</body>
+</html>
